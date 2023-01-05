@@ -21,7 +21,6 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Predict the stock high and low prices for the next two weeks
-#predictions = model.150, 130, 140, 100000], [140, 150, 130, 140, 100000], [140, 150, 130, 140, 100000], [140, 150, 130, 140, 100000]]))
 
 predictions = model.predict(np.array([data.iloc[-1][["Open", "High", "Low", "Close", "Volume"]].values] * 7))
 
