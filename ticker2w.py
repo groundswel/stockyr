@@ -29,4 +29,6 @@ min_price = min(predictions[:, 1])
 max_price = max(predictions[:, 0])
 
 # Print the predicted price range
+
+print(f"The latest close is ${data['Close'].iloc[-1]:.2f}")
 print(f"The predicted price range for the next two weeks is ${min_price:.2f} to ${max_price:.2f}")
